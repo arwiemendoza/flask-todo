@@ -1,0 +1,138 @@
+body {
+  font-family: "Lucida Console", monospace !important;
+}
+
+#todo-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+#todos-header {
+  width: 25vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-bottom: 15px;
+}
+
+#add-todo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  border: 2px black solid;
+  border-radius: 10px;
+  height: 5vh;
+  width: 25vw;
+  margin-bottom: 20px;
+}
+
+#todo-create-name {
+  border: none;
+  outline: none;
+
+  width: 20vw;
+}
+
+#todo-submit {
+  background-color: rgba(0, 0, 0, 0.689);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+
+  border: 2px rgba(0, 0, 0, 0.689) solid;
+  height: 3vh;
+  width: 3vh;
+}
+
+#todo-name:focus {
+  border: none;
+  outline: none;
+}
+
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: space-around;
+}
+
+.todo-activity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 25vw;
+  height: 6vh;
+  margin: 6px;
+
+  border-radius: 8px;
+
+  background-color: rgba(0, 0, 0, 0.689);
+  color: white;
+}
+
+.todo-activity:hover {
+  background-color: rgba(125, 115, 115, 0.515);
+
+  .todo-name {
+    color: black;
+  }
+}
+
+#todo-checkbox-label {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.todo-name {
+  color: white;
+}
+
+.todo-delete {
+  border: none;
+  outline: none;
+
+  margin-right: 15px;
+}
+
+#todo-count {
+  width: 25vw;
+}
+
+.underlined {
+  text-decoration: line-through;
+  text-decoration-skip-ink: auto;
+  line-height: 5;
+  display: inline-block;
+
+}
+
+#delete-todos {
+  background-color: rgba(0, 0, 0, 0.689);
+  color: white;
+
+  border: 2px rgba(0, 0, 0, 0.689) solid;
+  border-radius: 8px;
+}
+
+#todo-submit:hover, #delete-todos:hover {
+  background-color: white;
+  color: black;
+
+  cursor: pointer;
+}
+
+
